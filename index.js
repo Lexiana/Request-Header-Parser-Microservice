@@ -20,7 +20,7 @@ app.get('/', function (req, res) {
 });
 
 // your first API endpoint...
-app.get("/api/whoami", (req, res)=>{
+app.get('/api/whoami', (req, res)=>{
   res.json({
     ipaddress: req.ip,
     language: req.header[`accept-language`],
