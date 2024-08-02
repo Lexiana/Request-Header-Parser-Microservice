@@ -20,6 +20,7 @@ app.get('/', function (req, res) {
 });
 
 // your first API endpoint...
+
 app.get("/api/whoami", function(req, res){
 
   const ipaddress = req.headers.host;
@@ -27,6 +28,7 @@ app.get("/api/whoami", function(req, res){
   const software = req.headers["user-agent"];
 
   res.json({ipaddress, language, software});
+
 });
 
 
